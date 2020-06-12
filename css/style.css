@@ -1,0 +1,623 @@
+body{
+    background: #212121;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    background-color: #1a1a1a;
+}
+
+.kontak-kems{
+    background-color: #2c2c2c;
+}
+
+.kemampuan{
+    background-color: #141414;
+}
+
+.page-footer{
+    background-color: #1a1a1a;
+}
+
+.sorotan1{
+    font-size: 50px;
+}
+
+.contact-side{
+    font-size: 16px;
+}
+
+.contact-font{
+    font-size: 16px;
+}
+
+
+.slider h3,
+.slider h5,
+.clients h3 
+.parallax-container h3{
+    text-shadow: 1px 1px 3px rgb(0,0,0,0.7);
+}
+
+.parallax-container {
+    max-height: 40%;
+}
+
+.parallax img {
+    filter: grayscale(1);
+    opacity: 0.4 !important;
+}
+
+.portfolio .clients {
+    text-shadow: 1px 1px 3px rgb(0,0,0,0.7);
+}
+
+.clients img {
+    opacity: 0.25;
+    max-width: 140px;
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0.8));
+    cursor: pointer;
+    
+}
+
+.clients img:hover {
+    opacity: 1;
+}
+
+section, footer{
+    padding: 20px 0;
+}
+
+.nav-wrapper img {
+    padding-top: 22px;
+}
+
+footer p{
+    font-size: 100%;
+}
+
+
+.butobuto{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #1a1a1a;
+    margin: 20px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #000000;
+    color: #1DE9B6;
+    overflow: hidden;
+    position: relative;
+}
+
+.butobuto i{
+    line-height: 90px;
+    font-size: 40px;
+    transition: 0.2s linear;
+}
+
+.butobuto:hover i{
+    transform: scale(1.3);
+    color: #1a1a1a;
+
+}
+
+.butobuto::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #1DE9B6;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.butobuto:hover::before{
+    animation: aaa 1s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+#penutup .teks-utama{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%. -50%);
+}
+
+#penutup .teks-utama h2{
+    text-align: center;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #ff007790;
+    background-image: url(https://i.ibb.co/37bBjH6/water.png);
+    -webkit-background-clip: text;
+    animation: bbb 15s infinite;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#707070);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,#1DE9B6);
+}
+
+@keyframes bbb {
+    from{
+        background-position: left 0 top 0;
+    }
+
+    to{
+        background-position: left 1000px top 0;
+    }
+}
+
+.kartu-skill{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.kartu-skill .kartu{
+    position: relative;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    width: 45%;
+    margin: 30px 0;
+}
+
+.kartu-skill .kartu .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.kartu-skill .kartu:hover .imgBx{
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out;
+    background: #16ad87;
+}
+
+.kartu-skill .kartu .imgBx:before{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 6em;
+    color: rgba(255, 255, 255, .05);
+    font-weight: 700;
+}
+
+.kartu-skill .kartu .imgBx img{
+    max-width: 100px;
+    transition: 0.5s ease-in-out;
+}
+
+.kartu-skill .kartu:hover .imgBx img{
+    max-width: 75px;
+}
+
+.kartu-skill .kartu .content{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kartu-skill .kartu .content h3{
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.kartu-skill .kartu .content a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 992px){
+    .kartu-skill{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kartu-skill .kartu{
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .kartu-skill .kartu{
+        max-width: 300px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .kartu-skill .kartu .imgBx,
+    .kartu-skill .kartu:hover .imgBx{
+        width: 100%;
+        height: 200px;
+        left: 0;
+
+    }
+
+    .kartu-skill .kartu .imgBx img,
+    .kartu-skill .kartu:hover .imgBx img{
+        max-width: 100px;
+
+    }
+
+    .kartu-skill .kartu .content{
+        position: relative;
+        width: 100%;
+    }
+}
+
+
+#skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #101010;
+}
+
+.lingkaran{
+    position: relative;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: unset;
+    align-items: center;
+    align-content: center;
+}
+
+
+.lingkaran .c-lingkaran{
+    position: relative;
+    width: 250px;
+    background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.lingkaran .c-lingkaran:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
+}
+
+
+.lingkaran .c-lingkaran:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .03);
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 1000;
+}
+
+
+.percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+.percent .number h2{
+    color: #777;
+    font-weight: 700;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+
+.c-lingkaran:hover .percent .number h2{
+    color: #fff;
+    font-size: 60px;
+}
+
+
+.percent .number h2 span{
+    font-size: 30px;
+    color: #777;
+    transition: 0.5s;
+}
+
+
+.c-lingkaran:hover .percent .number h2 span{
+    color: #fff;
+
+}
+
+
+.teks{
+    position: relative;
+    color: #777;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+
+}
+
+.c-lingkaran:hover .teks{
+    color: #fff;
+}
+
+
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+}
+
+svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+
+/* Skill part 2 */
+.lingkaran-2{
+    position: relative;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: unset;
+    align-items: center;
+    align-content: center;
+}
+
+
+.lingkaran-2 .c-lingkaran-2{
+    position: relative;
+    width: 250px;
+    background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.lingkaran-2 .c-lingkaran-2:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
+}
+
+
+.lingkaran-2 .c-lingkaran-2:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .03);
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 1000;
+}
+
+
+.percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+.percent .number h2{
+    color: #777;
+    font-weight: 700;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+
+.c-lingkaran-2:hover .percent .number h2{
+    color: #fff;
+    font-size: 60px;
+}
+
+
+.percent .number h2 span{
+    font-size: 30px;
+    color: #777;
+    transition: 0.5s;
+}
+
+
+.c-lingkaran-2:hover .percent .number h2 span{
+    color: #fff;
+
+}
+
+
+.teks{
+    position: relative;
+    color: #777;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+
+}
+
+.c-lingkaran-2:hover .teks{
+    color: #fff;
+}
+
+
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+}
+
+svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+
+/* Warna Skill */
+.c-lingkaran:nth-child(1) svg circle:nth-child(2){
+    stroke: #00ff42;
+    stroke-dashoffset: calc(440 - (440 * 80) / 100);
+}
+
+
+.c-lingkaran:nth-child(2) svg circle:nth-child(2){
+    stroke: #1100ff;
+    stroke-dashoffset: calc(440 - (440 * 75) / 100);
+}
+
+
+.c-lingkaran:nth-child(3) svg circle:nth-child(2){
+    stroke: #ff2868;
+    stroke-dashoffset: calc(440 - (440 * 60) / 100);
+}
+
+
+.c-lingkaran-2:nth-child(1) svg circle:nth-child(2){
+    stroke: #ff0055;
+    stroke-dashoffset: calc(440 - (440 * 85) / 100);
+}
+
+
+.c-lingkaran-2:nth-child(2) svg circle:nth-child(2){
+    stroke: #ff7300;
+    stroke-dashoffset: calc(440 - (440 * 55) / 100);
+}
+
+
+.c-lingkaran-2:nth-child(3) svg circle:nth-child(2){
+    stroke: #d400ff;
+    stroke-dashoffset: calc(440 - (440 * 60) / 100);
+}
