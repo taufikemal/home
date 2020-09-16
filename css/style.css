@@ -605,23 +605,23 @@ svg circle:nth-child(2){
 
 .c-lingkaran:nth-child(3) svg circle:nth-child(2){
     stroke: #ff2868;
-    stroke-dashoffset: calc(440 - (440 * 60) / 100);
+    stroke-dashoffset: calc(440 - (440 * 85) / 100);
 }
 
 
 .c-lingkaran-2:nth-child(1) svg circle:nth-child(2){
-    stroke: #ff0055;
+    stroke: #9d0aff;
     stroke-dashoffset: calc(440 - (440 * 85) / 100);
 }
 
 
 .c-lingkaran-2:nth-child(2) svg circle:nth-child(2){
     stroke: #ff7300;
-    stroke-dashoffset: calc(440 - (440 * 55) / 100);
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
 }
 
 
 .c-lingkaran-2:nth-child(3) svg circle:nth-child(2){
-    stroke: #d400ff;
-    stroke-dashoffset: calc(440 - (440 * 60) / 100);
+    stroke: #ff00f2;
+    stroke-dashoffset: calc(440 - (440 * 75) / 100);
 }
